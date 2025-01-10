@@ -21,9 +21,9 @@ Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisit
    cd ejercicio1-E2E
 Configura el Gradle Wrapper a la versión 7.6.1:
 
-bash
-Copiar código
-./gradlew wrapper --gradle-version 7.6.1
+```bash
+   Copiar código
+   ./gradlew wrapper --gradle-version 7.6.1
 Verifica que las dependencias se instalen correctamente:
 
 bash
