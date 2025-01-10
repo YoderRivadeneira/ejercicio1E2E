@@ -39,7 +39,8 @@ jobs:
 
       # 5. Verificar Gradle Wrapper
       - name: Verify Gradle wrapper
-        run: ./ejercicio1-E2E/gradlew wrapper --gradle-version 7.6.1
+        working-directory: ./ejercicio1-E2E
+        run: ./gradlew wrapper --gradle-version 7.6.1
 
       # 6. Ejecutar las pruebas en modo headless
       - name: Run tests in headless mode
