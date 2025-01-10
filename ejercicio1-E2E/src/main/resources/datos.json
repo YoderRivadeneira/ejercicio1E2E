@@ -1,0 +1,10 @@
+{
+  "usuario": "standard_user",
+  "password": "secret_sauce",
+  "productos": ["Sauce Labs Backpack", "Sauce Labs Bike Light"],
+  "datosCompra": {
+    "nombre": "Yoder",
+    "apellido": "Rivadeneira",
+    "codigoPostal": "12345"
+  }
+}

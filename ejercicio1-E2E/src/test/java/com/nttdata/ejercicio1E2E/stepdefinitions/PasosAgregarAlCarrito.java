@@ -1,0 +1,28 @@
+package com.nttdata.ejercicio1E2E.stepdefinitions;
+
+import com.nttdata.ejercicio1E2E.actors.ActorUsuario;
+import com.nttdata.ejercicio1E2E.tasks.TareaDeAgregarAlCarrito;
+import com.nttdata.ejercicio1E2E.utils.TestContext;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.When;
+
+public class PasosAgregarAlCarrito {
+
+    @Before
+    public void setUp() throws Exception {
+        ActorUsuario.inicializar();
+    }
+
+    @After
+    public void tearDown() {
+        ActorUsuario.limpiar();
+    }
+
+    @When("el usuario agrega dos productos al carrito")
+    public void elUsuarioAgregaDosProductosAlCarrito() {
+        ActorUsuario.obtener().attemptsTo(
+                TareaDeAgregarAlCarrito.agregarProductos(TestContext.getDatos().getProductos())
+        );
+    }
+}
