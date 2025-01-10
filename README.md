@@ -60,24 +60,44 @@ Reporte en Cucumber: Los reportes en Cucumber se generan automáticamente y refl
 📂 Estructura del proyecto
 bash
 Copiar código
+
 src/
+
 ├── main/
+
 │   └── java/
+
 │       └── com/nttdata/ejercicio1E2E/
+
 │           ├── tasks/                       # Implementaciones de tareas en ScreenPlay
+
 │           ├── questions/                  # Preguntas para verificar estados
+
 │           ├── actors/                     # Configuración del actor
+
+
 │           ├── models/                     # Modelos para datos del JSON
+
 │           ├── utils/                      # Utilidades como lectura de JSON y WebDriver
+
 │           ├── interfaces/                 # Selectores de elementos web
+
 │           └── resources/
+
 │               └── datos.json              # Datos de prueba
+
 └── test/
+
     └── java/
+    
         └── com/nttdata/ejercicio1E2E/
+        
             ├── runner/                     # Clase de ejecución (Runner)
+            
             ├── stepdefinitions/            # Definición de los pasos de los escenarios
+            
             └── features/                   # Escenarios escritos en Cucumber
+
 
             
 📝 Detalles del ejercicio
