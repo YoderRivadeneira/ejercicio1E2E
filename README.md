@@ -91,6 +91,13 @@ la ruta donde se ubica el reporte después de ejecutar un test es: ejercicio1-E2
 
     Detalles de los Reportes
 
+
+
+![image](https://github.com/user-attachments/assets/3a409c3a-592e-4fb8-8bbd-eea6ccb86350)
+
+![image](https://github.com/user-attachments/assets/712949fd-835d-4cad-93df-42efdf00951e)
+
+
         Reporte en cucumber: build/reports/tests/test/index.html
             Resultados detallados de cada escenario ejecutado.
             Tiempo de ejecución por escenario.
