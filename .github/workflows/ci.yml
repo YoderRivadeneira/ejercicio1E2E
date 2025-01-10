@@ -1,0 +1,43 @@
+name: CI for E2E Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Configurar el repositorio
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Configurar JDK
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: 17
+
+      # 3. Cache para dependencias de Gradle
+      - name: Cache Gradle dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.gradle/caches
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      # 4. Configurar Gradle Wrapper
+      - name: Verify Gradle wrapper
+        run: ./ejercicio1-E2E/gradlew wrapper --gradle-version 7.6.1
+
+      # 5. Ejecutar las pruebas sin clean
+      - name: Run tests
+        working-directory: ./ejercicio1-E2E
+        run: ./gradlew test --tests "com.nttdata.ejercicio1E2E.runner.EjecutarSerenity" --info
