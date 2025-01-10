@@ -33,10 +33,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      # 4. Configurar Gradle Wrapper
+      # 4. Asignar permisos de ejecución al gradlew
+      - name: Grant execute permissions for Gradle Wrapper
+        run: chmod +x ./gradlew
+
+      # 5. Verificar Gradle Wrapper
       - name: Verify Gradle wrapper
         run: ./gradlew wrapper --gradle-version 7.6.1
 
-      # 5. Ejecutar las pruebas
-      - name: Run tests
+      # 6. Ejecutar las pruebas en modo headless
+      - name: Run tests in headless mode
         run: ./gradlew test --tests "com.nttdata.ejercicio1E2E.runner.EjecutarSerenity" --info
