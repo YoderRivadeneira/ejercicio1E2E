@@ -9,16 +9,15 @@ Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisit
 - **Sistema Operativo**: Windows 10 / macOS / Linux
 - **IDE Recomendado**: IntelliJ IDEA 2023.1 o superior
 - **JDK**: Versión 17 (configurado en la variable de entorno `JAVA_HOME`)
-- **Google Chrome**: Última versión
+- **Google Chrome**: cualquiera (de preferencia la última versión)
 - **Gradle Wrapper**: No necesitas instalarlo globalmente; el proyecto incluye el wrapper.
 - **Conexión a Internet**: Necesaria para descargar dependencias y ejecutar las pruebas.
-- **Node.js (opcional)**: Si deseas trabajar con reportes avanzados usando herramientas externas.
 
 ## 💻 Comandos de instalación
 
 1. Clona el repositorio en tu máquina local:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone [<URL_DEL_REPOSITORIO>](https://github.com/YoderRivadeneira/ejercicio1E2E)
    cd ejercicio1-E2E
 Configura el Gradle Wrapper a la versión 7.6.1:
 
@@ -40,10 +39,6 @@ Copiar código
 ./gradlew clean test aggregate
 Ver los reportes: Los reportes de SerenityBDD estarán disponibles en la siguiente ruta:
 
-bash
-Copiar código
-target/site/serenity/index.html
-Abre el archivo index.html en tu navegador para ver el detalle de las pruebas.
 
 🛠 Configuración adicional
 Datos de prueba: Los datos para las pruebas se encuentran en el archivo src/main/resources/datos.json. Asegúrate de que este archivo contenga las credenciales y datos requeridos:
@@ -83,6 +78,8 @@ src/
             ├── runner/                     # Clase de ejecución (Runner)
             ├── stepdefinitions/            # Definición de los pasos de los escenarios
             └── features/                   # Escenarios escritos en Cucumber
+
+            
 📝 Detalles del ejercicio
 El flujo implementado incluye:
 
@@ -91,6 +88,8 @@ Agregar dos productos al carrito.
 Visualizar el carrito.
 Completar el formulario de compra.
 Finalizar la compra y verificar el mensaje de confirmación: “THANK YOU FOR YOUR ORDER”.
+
+
 📑 Notas adicionales
 Los reportes generados en target/site/serenity/index.html muestran capturas de pantalla de cada paso ejecutado.
 El proyecto incluye un Gradle Wrapper configurado para que no sea necesario instalar Gradle globalmente.
