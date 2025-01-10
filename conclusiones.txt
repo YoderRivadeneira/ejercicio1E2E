@@ -2,23 +2,17 @@ Conclusiones del Ejercicio
 
 Hallazgos:
 
-Automatización Exitosa del Flujo de Compra
+- Automatización Exitosa del Flujo de Compra
 
-Se logró implementar un flujo completo de compra en la página SauceDemo con éxito, desde la autenticación hasta la confirmación final.
+-  Se logró implementar un flujo completo de compra en la página SauceDemo con éxito, desde la autenticación hasta la confirmación final.
 Los datos utilizados en las pruebas se obtienen dinámicamente de un archivo JSON, lo que permite mayor flexibilidad y escalabilidad en las pruebas.
 Integración de SerenityBDD con ScreenPlay
 
-El uso del Gradle Wrapper asegura que el proyecto pueda ejecutarse sin necesidad de instalar Gradle de forma global en las máquinas de desarrollo o revisión.
+-  El uso del Gradle Wrapper asegura que el proyecto pueda ejecutarse sin necesidad de instalar Gradle de forma global en las máquinas de desarrollo o revisión.
 Codificación y Caracteres Especiales
 
 Retos Encontrados:
-
-Gestión de Dependencias
-
-Se presentaron inconvenientes iniciales al configurar versiones compatibles de las dependencias de SerenityBDD, ScreenPlay y Cucumber. Esto se resolvió especificando versiones estables en el archivo build.gradle.
-
-Ejecución por Consola vs IDE
-
+-Ejecución por Consola vs IDE:
 Se detectaron diferencias en la ejecución de las pruebas entre IntelliJ IDEA y la consola. Fue necesario ajustar comandos y codificación para asegurar la funcionalidad en ambos entornos.
 
 Acerca del Reporte:
