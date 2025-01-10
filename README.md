@@ -18,7 +18,7 @@ Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisit
 1. Clona el repositorio en tu máquina local desde el siguiente link "https://github.com/YoderRivadeneira/ejercicio1E2E", o puedes usar los siguientes comandos:
    ```bash
    git clone https://github.com/YoderRivadeneira/ejercicio1E2E
-   cd ejercicio1-E2E
+   cd ejercicio1E2E
    ```
    
 Configura el Gradle Wrapper a la versión 7.6.1:
