@@ -39,7 +39,7 @@ Verifica que las dependencias se instalen correctamente:
 Nota: Asegurate de ejecutar este comando en la ruta del proyecto, es decir en la terminal debes ubicarte en la ruta del proyecto.
 
 ```bash
-   ./gradlew clean build
+   ./gradlew build
 ```
 Esto descargará todas las dependencias declaradas en el archivo build.gradle.
 
