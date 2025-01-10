@@ -61,6 +61,15 @@ También puedes ejecutar las pruebas directamente en el IDE IntelliJ IDEA:
 
 Para ello puedes ubicar la clase "EjecutarSerenity" darleclick derecho y seleccionar la opción "Run EjecutarSerenity" 
 
+
+
+
+![image](https://github.com/user-attachments/assets/34e3644c-5d4e-42aa-a58b-8b567c80b25a)
+
+
+
+
+
 o 
 
 ubicar el icono verde de Run y ejecutar "EjecutarSerenity", si el icono verde no esta configurado se puede configurar en las opciones de "Run" opción "edit configuration" y asignandole el siguiente comando: 
