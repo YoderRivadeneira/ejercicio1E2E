@@ -22,9 +22,7 @@ Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisit
    ```bash
    cd ejercicio1E2E
    ```
-   ```bash
-   cd .\ejercicio1-E2E\
-   ```
+
 Configura el Gradle Wrapper a la versión 7.6.1:
 
 Nota: Asegurate de ejecutar este comando en la ruta del proyecto, es decir en la terminal debes ubicarte en la ruta del proyecto.
