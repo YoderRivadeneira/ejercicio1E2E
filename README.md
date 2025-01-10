@@ -41,8 +41,9 @@ Nota: Asegurate de ejecutar este comando en la ruta del proyecto, es decir en la
 ```bash
    ./gradlew build
 ```
-Esto descargará todas las dependencias declaradas en el archivo build.gradle.
+Esto descargará todas las dependencias declaradas en el archivo build.gradle, también se puede hhacer desde el IDE con las opciones de gradle
 
+![image](https://github.com/user-attachments/assets/991041d2-2238-41cd-b30f-bad01ac76eb3)
 
 
 🚀 Instrucciones para ejecutar las pruebas
