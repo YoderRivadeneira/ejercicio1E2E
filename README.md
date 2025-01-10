@@ -188,7 +188,12 @@ El flujo implementado incluye:
 
 📑 Notas adicionales
 
-Revisar capturas de pantalla del flujo realizado: Se pueden revisar capturas de pantalla que se toman automaticamente durante la ejecución de los test, para ello se debe ubicar la carpeta "target" que debería estar en una ruta similar a esta: ejercicio1-E2E\target\site\serenityLos reportes generados en target/site/serenity/index.html
+Revisar capturas de pantalla del flujo realizado: Se pueden revisar capturas de pantalla que se toman automaticamente durante la ejecución de los test, para ello se debe ubicar la carpeta "target" que debería estar en una ruta similar a esta: ejercicio1-E2E\target\site\serenity:
+
+
+![image](https://github.com/user-attachments/assets/d0872b97-b6df-4a34-a18a-303b7db01ce0)
+
+
 
 El proyecto incluye un Gradle Wrapper configurado para que no sea necesario instalar Gradle globalmente.
 
