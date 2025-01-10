@@ -17,36 +17,39 @@ Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisit
 
 1. Clona el repositorio en tu máquina local:
    ```bash
-   git clone [<URL_DEL_REPOSITORIO>](https://github.com/YoderRivadeneira/ejercicio1E2E)
+   git clone https://github.com/YoderRivadeneira/ejercicio1E2E
    cd ejercicio1-E2E
+   ```
+   
 Configura el Gradle Wrapper a la versión 7.6.1:
 
 ```bash
-   Copiar código
    ./gradlew wrapper --gradle-version 7.6.1
-Verifica que las dependencias se instalen correctamente:
 ```
 
+Verifica que las dependencias se instalen correctamente:
 
-bash
-Copiar código
-./gradlew clean build
+```bash
+   ./gradlew clean build
+```
 Esto descargará todas las dependencias declaradas en el archivo build.gradle.
+
+
 
 🚀 Instrucciones para ejecutar las pruebas
 Ejecutar las pruebas: Ejecuta las pruebas y genera los reportes con el siguiente comando:
 
-bash
-Copiar código
-./gradlew clean test aggregate
+```bash
+   ./gradlew clean test aggregate
+```
+
 Ver los reportes: Los reportes de SerenityBDD estarán disponibles en la siguiente ruta:
 
 
 🛠 Configuración adicional
 Datos de prueba: Los datos para las pruebas se encuentran en el archivo src/main/resources/datos.json. Asegúrate de que este archivo contenga las credenciales y datos requeridos:
 
-json
-Copiar código
+```bash
 {
   "usuario": "standard_user",
   "password": "secret_sauce",
@@ -57,11 +60,14 @@ Copiar código
     "codigoPostal": "12345"
   }
 }
+```
+
 Reporte en Cucumber: Los reportes en Cucumber se generan automáticamente y reflejan los escenarios definidos en el archivo src/test/java/com/nttdata/ejercicio1E2E/features/compra.feature.
 
 📂 Estructura del proyecto
-bash
-Copiar código
+
+```bash
+
 
 src/
 
@@ -100,7 +106,7 @@ src/
             
             └── features/                   # Escenarios escritos en Cucumber
 
-
+```
             
 📝 Detalles del ejercicio
 El flujo implementado incluye:
