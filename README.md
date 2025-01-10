@@ -70,6 +70,15 @@ Los reportes en Cucumber se generan automáticamente y reflejan los escenarios d
 
 la ruta donde se ubica el reporte después de ejecutar un test es: ejercicio1-E2E/build/reports/tests/test/index.html
 
+    Detalles de los Reportes
+
+        Reporte en cucumber: build/reports/tests/test/index.html
+            Resultados detallados de cada escenario ejecutado.
+            Tiempo de ejecución por escenario.
+            Acceso rápido a errores o excepciones encontradas durante la ejecución.
+            Estado final de las pruebas (éxito o fallo).
+            Es ideal para documentar y presentar evidencia de la ejecución de los flujos automatizados.
+            Reporte Estándar de Gradle (build/reports/tests/test/index.html)
 
 🛠 Info adicional
 
