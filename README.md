@@ -198,3 +198,24 @@ Revisar capturas de pantalla del flujo realizado: Se pueden revisar capturas de 
 El proyecto incluye un Gradle Wrapper configurado para que no sea necesario instalar Gradle globalmente.
 
 Si encuentras problemas de configuración, revisa las variables de entorno y las versiones mencionadas en los prerrequisitos.
+
+
+
+
+🚀 EXTRAS/PLUS
+
+DevOps e Integración continua CICD:
+
+Se integró la solución con github Actions para poder incluir su ejecucuón en procesos automatizados CICD.
+Al realizar un push a la rama automáticamente se ejecuta el test con los runners de github actions.
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/0c73b0b6-1410-4790-8491-8553734d7501)
+
+![image](https://github.com/user-attachments/assets/e54a0ef2-561e-4b42-8e03-f0ae79218cc3)
+
+
+![image](https://github.com/user-attachments/assets/5dc61b52-d739-4981-a0e4-8c99dde1f44f)
