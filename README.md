@@ -204,13 +204,14 @@ Si encuentras problemas de configuración, revisa las variables de entorno y las
 
 🚀 EXTRAS/PLUS
 
-DevOps e Integración continua CICD:
+DevOps e Integración continua CICD: https://github.com/YoderRivadeneira/ejercicio1E2E/actions
 
 Se integró la solución con github Actions para poder incluir su ejecucuón en procesos automatizados CICD.
 Al realizar un push a la rama automáticamente se ejecuta el test con los runners de github actions.
 
 
 
+![image](https://github.com/user-attachments/assets/d40b5e95-fa0e-4090-85da-1ededd44a732)
 
 
 ![image](https://github.com/user-attachments/assets/0c73b0b6-1410-4790-8491-8553734d7501)
