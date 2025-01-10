@@ -31,7 +31,7 @@ public class PasosCompletarCompra {
         );
     }
 
-    @Then("el mensaje de confirmación debería ser {string}")
+    @Then("el mensaje de correcto debe ser {string}")
     public void elMensajeDeConfirmacionDeberiaSer(String mensajeEsperado) {
         ActorUsuario.obtener().should(
                 seeThat(

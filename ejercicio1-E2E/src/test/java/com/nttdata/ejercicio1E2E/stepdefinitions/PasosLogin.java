@@ -19,7 +19,7 @@ public class PasosLogin {
         ActorUsuario.limpiar();
     }
 
-    @Given("el usuario inicia sesión con las credenciales del json")
+    @Given("el usuario se logea con las credenciales del json")
     public void elUsuarioIniciaSesionConLasCredencialesDelJson() {
         ActorUsuario.obtener().attemptsTo(
                 TareaDeLogin.conCredenciales(
