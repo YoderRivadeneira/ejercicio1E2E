@@ -15,7 +15,7 @@ Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisit
 
 ## 💻 Comandos de instalación
 
-1. Clona el repositorio en tu máquina local:
+1. Clona el repositorio en tu máquina local desde el siguiente link "https://github.com/YoderRivadeneira/ejercicio1E2E", o puedes usar los siguientes comandos:
    ```bash
    git clone https://github.com/YoderRivadeneira/ejercicio1E2E
    cd ejercicio1-E2E
@@ -23,11 +23,16 @@ Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisit
    
 Configura el Gradle Wrapper a la versión 7.6.1:
 
+Nota: Asegurate de ejecutar este comando en la ruta del proyecto, es decir en la terminal debes ubicarte en la ruta del proyecto.
 ```bash
    ./gradlew wrapper --gradle-version 7.6.1
 ```
 
+
+
 Verifica que las dependencias se instalen correctamente:
+
+Nota: Asegurate de ejecutar este comando en la ruta del proyecto, es decir en la terminal debes ubicarte en la ruta del proyecto.
 
 ```bash
    ./gradlew clean build
