@@ -68,6 +68,11 @@ ubicar el icono verde de Run y ejecutar "EjecutarSerenity", si el icono verde no
 :test --tests "com.nttdata.ejercicio1E2E.runner.EjecutarSerenity"
 ```
 
+![image](https://github.com/user-attachments/assets/583e6e96-5723-44d5-ac32-616d55da38d9)
+
+
+
+
 📋 Reporte en Cucumber: 
 
 Los reportes en Cucumber se generan automáticamente y reflejan los escenarios definidos en el archivo src/test/java/com/nttdata/ejercicio1E2E/features/compra.feature.
