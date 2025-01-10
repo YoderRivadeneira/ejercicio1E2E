@@ -23,22 +23,20 @@ Se detectaron diferencias en la ejecución de las pruebas entre IntelliJ IDEA y 
 
 Acerca del Reporte:
 
-Ubicación de los Reportes
-Los reportes generados se encuentran en:
-build/reports/tests/test/index.html (reporte estándar generado automáticamente).
-target/site/serenity/ (ruta de reportes SerenityBDD con capturas de pantalla).
+    Ubicación de los Reportes
+        Los reportes generados se encuentran en:
+        build/reports/tests/test/index.html (reporte estándar generado automáticamente).
+        target/site/serenity/ (ruta de reportes SerenityBDD con capturas de pantalla).
 
-Detalles de los Reportes
-Reporte en cucumber: build/reports/tests/test/index.html
+    Detalles de los Reportes
 
-Resultados detallados de cada escenario ejecutado.
-Tiempo de ejecución por escenario.
-Acceso rápido a errores o excepciones encontradas durante la ejecución.
-Estado final de las pruebas (éxito o fallo).
-Es ideal para documentar y presentar evidencia de la ejecución de los flujos automatizados.
-Reporte Estándar de Gradle (build/reports/tests/test/index.html)
+        Reporte en cucumber: build/reports/tests/test/index.html
+            Resultados detallados de cada escenario ejecutado.
+            Tiempo de ejecución por escenario.
+            Acceso rápido a errores o excepciones encontradas durante la ejecución.
+            Estado final de las pruebas (éxito o fallo).
+            Es ideal para documentar y presentar evidencia de la ejecución de los flujos automatizados.
+            Reporte Estándar de Gradle (build/reports/tests/test/index.html)
 
 
-
-SerenityBDD: (target/site/serenity/),esta ruta incluye: Capturas de pantalla de cada paso del flujo.
-
+        SerenityBDD: (target/site/serenity/),esta ruta incluye: Capturas de pantalla de cada paso del flujo.
