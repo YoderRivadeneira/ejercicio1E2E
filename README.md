@@ -25,6 +25,8 @@ Configura el Gradle Wrapper a la versión 7.6.1:
    Copiar código
    ./gradlew wrapper --gradle-version 7.6.1
 Verifica que las dependencias se instalen correctamente:
+```
+
 
 bash
 Copiar código
