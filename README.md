@@ -37,17 +37,39 @@ Esto descargará todas las dependencias declaradas en el archivo build.gradle.
 
 
 🚀 Instrucciones para ejecutar las pruebas
+
 Ejecutar las pruebas: Ejecuta las pruebas y genera los reportes con el siguiente comando:
 
 ```bash
-   ./gradlew clean test aggregate
+   ./gradlew test --tests "com.nttdata.ejercicio1E2E.runner.EjecutarSerenity" --info
+```
+Nota: Asegurate de ejecutar este comando en la ruta del proyecto, es decir en la terminal debes ubicarte en la ruta del proyecto.
+
+
+
+También puedes ejecutar las pruebas directamente en el IDE IntelliJ IDEA:
+
+Para ello puedes ubicar la clase "EjecutarSerenity" darleclick derecho y seleccionar la opción "Run EjecutarSerenity" 
+
+o 
+
+ubicar el icono verde de Run y ejecutar "EjecutarSerenity", si el icono verde no esta configurado se puede configurar en las opciones de "Run" opción "edit configuration" y asignandole el siguiente comando: 
+
+```bash
+:test --tests "com.nttdata.ejercicio1E2E.runner.EjecutarSerenity"
 ```
 
-Ver los reportes: Los reportes de SerenityBDD estarán disponibles en la siguiente ruta:
+📋 Reporte en Cucumber: 
+
+Los reportes en Cucumber se generan automáticamente y reflejan los escenarios definidos en el archivo src/test/java/com/nttdata/ejercicio1E2E/features/compra.feature.
+
+la ruta donde se ubica el reporte después de ejecutar un test es: ejercicio1-E2E/build/reports/tests/test/index.html
 
 
-🛠 Configuración adicional
-Datos de prueba: Los datos para las pruebas se encuentran en el archivo src/main/resources/datos.json. Asegúrate de que este archivo contenga las credenciales y datos requeridos:
+🛠 Info adicional
+
+Datos de prueba: Los datos para las pruebas se encuentran en el archivo src/main/resources/datos.json
+
 
 ```bash
 {
@@ -55,14 +77,14 @@ Datos de prueba: Los datos para las pruebas se encuentran en el archivo src/main
   "password": "secret_sauce",
   "productos": ["Sauce Labs Backpack", "Sauce Labs Bike Light"],
   "datosCompra": {
-    "nombre": "John",
-    "apellido": "Doe",
+    "nombre": "Yoder",
+    "apellido": "Rivadeneira",
     "codigoPostal": "12345"
   }
 }
 ```
 
-Reporte en Cucumber: Los reportes en Cucumber se generan automáticamente y reflejan los escenarios definidos en el archivo src/test/java/com/nttdata/ejercicio1E2E/features/compra.feature.
+
 
 📂 Estructura del proyecto
 
@@ -77,7 +99,7 @@ src/
 
 │       └── com/nttdata/ejercicio1E2E/
 
-│           ├── tasks/                       # Implementaciones de tareas en ScreenPlay
+│           ├── tasks/                      # Implementaciones de tareas en ScreenPlay
 
 │           ├── questions/                  # Preguntas para verificar estados
 
@@ -100,7 +122,7 @@ src/
     
         └── com/nttdata/ejercicio1E2E/
         
-            ├── runner/                     # Clase de ejecución (Runner)
+            ├── runner/                     # Para la ejecución (Runner)
             
             ├── stepdefinitions/            # Definición de los pasos de los escenarios
             
@@ -109,16 +131,25 @@ src/
 ```
             
 📝 Detalles del ejercicio
+
+
 El flujo implementado incluye:
 
-Autenticación con el usuario standard_user y contraseña secret_sauce.
-Agregar dos productos al carrito.
-Visualizar el carrito.
-Completar el formulario de compra.
-Finalizar la compra y verificar el mensaje de confirmación: “THANK YOU FOR YOUR ORDER”.
+   - Autenticación con el usuario standard_user y contraseña secret_sauce.
+
+   - Agregar dos productos al carrito.
+
+   - Visualizar el carrito.
+
+   - Completar el formulario de compra.
+
+   - Finalizar la compra y verificar el mensaje de confirmación: “THANK YOU FOR YOUR ORDER”.
 
 
 📑 Notas adicionales
-Los reportes generados en target/site/serenity/index.html muestran capturas de pantalla de cada paso ejecutado.
+
+Revisar capturas de pantalla del flujo realizado: Se pueden revisar capturas de pantalla que se toman automaticamente durante la ejecución de los test, para ello se debe ubicar la carpeta "target" que debería estar en una ruta similar a esta: ejercicio1-E2E\target\site\serenityLos reportes generados en target/site/serenity/index.html
+
 El proyecto incluye un Gradle Wrapper configurado para que no sea necesario instalar Gradle globalmente.
+
 Si encuentras problemas de configuración, revisa las variables de entorno y las versiones mencionadas en los prerrequisitos.
