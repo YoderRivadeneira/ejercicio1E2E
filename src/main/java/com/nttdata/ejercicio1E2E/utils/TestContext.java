@@ -17,15 +17,21 @@ public class TestContext {
     public static void initialize() throws IOException {
         if (driver == null) {
             WebDriverManager.chromedriver().setup();
+
+
             boolean isCI = System.getenv("CI") != null;
+
             ChromeOptions options = new ChromeOptions();
             if (isCI) {
+
                 options.addArguments("--headless");
                 options.addArguments("--disable-gpu");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
-            }}
+            }
+
             driver = new ChromeDriver(options);
+
         }
     }
 
