@@ -17,22 +17,15 @@ public class TestContext {
     public static void initialize() throws IOException {
         if (driver == null) {
             WebDriverManager.chromedriver().setup();
-
-
             boolean isCI = System.getenv("CI") != null;
-
             ChromeOptions options = new ChromeOptions();
             if (isCI) {
-
                 options.addArguments("--headless");
                 options.addArguments("--disable-gpu");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
-            }
-
+            }}
             driver = new ChromeDriver(options);
-            OnStage.setTheStage(new Cast());
-            datos = JsonReader.read("src/main/resources/datos.json", DatosCompra.class);
         }
     }
 
@@ -40,9 +33,7 @@ public class TestContext {
         return driver;
     }
 
-    public static DatosCompra getDatos() {
-        return datos;
-    }
+
 
     public static void tearDown() {
         if (driver != null) {

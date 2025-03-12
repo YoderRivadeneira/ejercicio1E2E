@@ -6,6 +6,7 @@ import com.nttdata.ejercicio1E2E.utils.TestContext;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.When;
+import java.util.Arrays;
 
 public class PasosAgregarAlCarrito {
 
@@ -22,7 +23,7 @@ public class PasosAgregarAlCarrito {
     @When("el usuario agrega dos productos al carrito")
     public void elUsuarioAgregaDosProductosAlCarrito() {
         ActorUsuario.obtener().attemptsTo(
-                TareaDeAgregarAlCarrito.agregarProductos(TestContext.getDatos().getProductos())
+                TareaDeAgregarAlCarrito.agregarProductos(Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bolt T-Shirt"))
         );
     }
 }

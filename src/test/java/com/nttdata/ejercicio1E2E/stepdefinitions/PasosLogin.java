@@ -2,7 +2,6 @@ package com.nttdata.ejercicio1E2E.stepdefinitions;
 
 import com.nttdata.ejercicio1E2E.actors.ActorUsuario;
 import com.nttdata.ejercicio1E2E.tasks.TareaDeLogin;
-import com.nttdata.ejercicio1E2E.utils.TestContext;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -19,13 +18,10 @@ public class PasosLogin {
         ActorUsuario.limpiar();
     }
 
-    @Given("el usuario se logea con las credenciales del json")
-    public void elUsuarioIniciaSesionConLasCredencialesDelJson() {
+    @Given("el usuario se logea con {string} y {string}")
+    public void elUsuarioSeLogeaCon(String usuario, String password) {
         ActorUsuario.obtener().attemptsTo(
-                TareaDeLogin.conCredenciales(
-                        TestContext.getDatos().getUsuario(),
-                        TestContext.getDatos().getPassword()
-                )
+                TareaDeLogin.conCredenciales(usuario, password)
         );
     }
 }

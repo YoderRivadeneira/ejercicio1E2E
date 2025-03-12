@@ -4,12 +4,12 @@ import com.nttdata.ejercicio1E2E.actors.ActorUsuario;
 import com.nttdata.ejercicio1E2E.tasks.TareaIrAlCheckout;
 import com.nttdata.ejercicio1E2E.tasks.TareaDeCompletarCompra;
 import com.nttdata.ejercicio1E2E.questions.PreguntaMensajeConfirmacion;
-import com.nttdata.ejercicio1E2E.utils.TestContext;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-
+import java.util.Arrays;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.containsString;
+import java.util.Arrays;
 
 public class PasosCompletarCompra {
 
@@ -20,14 +20,10 @@ public class PasosCompletarCompra {
         );
     }
 
-    @And("completa el formulario de compra con los datos del archivo json")
-    public void completaElFormularioDeCompraConLosDatosDelArchivoJson() {
+    @And("completa el formulario de compra con {string}, {string} y {string}")
+    public void completaFormularioCon(String nombre, String apellido, String codigoPostal) {
         ActorUsuario.obtener().attemptsTo(
-                TareaDeCompletarCompra.conDatos(
-                        TestContext.getDatos().getDatosCompra().getNombre(),
-                        TestContext.getDatos().getDatosCompra().getApellido(),
-                        TestContext.getDatos().getDatosCompra().getCodigoPostal()
-                )
+                TareaDeCompletarCompra.conDatos(nombre, apellido, codigoPostal)
         );
     }
 
