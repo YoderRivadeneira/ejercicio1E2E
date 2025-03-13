@@ -107,25 +107,6 @@ la ruta donde se ubica el reporte después de ejecutar un test es: ejercicio1-E2
             Reporte Estándar de Gradle (build/reports/tests/test/index.html)
 
 🛠 Info adicional
-
-Datos de prueba: Los datos para las pruebas se encuentran en el archivo src/main/resources/datos.json
-
-
-```bash
-{
-  "usuario": "standard_user",
-  "password": "secret_sauce",
-  "productos": ["Sauce Labs Backpack", "Sauce Labs Bike Light"],
-  "datosCompra": {
-    "nombre": "Yoder",
-    "apellido": "Rivadeneira",
-    "codigoPostal": "12345"
-  }
-}
-```
-
-
-
 📂 Estructura del proyecto
 
 ```bash
