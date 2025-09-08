@@ -1,5 +1,6 @@
 package com.nttdata.ejercicio1E2E.tasks;
-
+import net.serenitybdd.screenplay.waits.WaitUntil;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import com.nttdata.ejercicio1E2E.interfaces.CheckoutInterface;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
