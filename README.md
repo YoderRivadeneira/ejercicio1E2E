@@ -6,6 +6,7 @@ Nota: Para visualizar de manera correcta todas las imágenes de este instructivo
 Este proyecto realiza una prueba funcional automatizada (Prueba E2E) para un flujo de compra en la página [SauceDemo](https://www.saucedemo.com/) utilizando **SerenityBDD** con **ScreenPlay**.
 
 
+
 ## 📋 Prerequisitos
 
 Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisitos:
