@@ -13,6 +13,9 @@ public class PreguntaMensajeConfirmacion implements Question<String> {
 
     @Override
     public String answeredBy(Actor actor) {
+              actor.attemptsTo(
+            WaitUntil.the(CheckoutInterface.MENSAJE_CONFIRMACION, isVisible()).forNoMoreThan(10).seconds()
+        );
         return TextContent.of(CheckoutInterface.MENSAJE_CONFIRMACION)
                 .answeredBy(actor);
     }
