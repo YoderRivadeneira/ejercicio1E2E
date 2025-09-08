@@ -30,8 +30,11 @@ public class TareaDeCompletarCompra implements Task {
                 Enter.theValue(nombre).into(CheckoutInterface.NOMBRE_FIELD),
                 Enter.theValue(apellido).into(CheckoutInterface.APELLIDO_FIELD),
                 Enter.theValue(codigoPostal).into(CheckoutInterface.CODIGO_POSTAL_FIELD),
-                Click.on(CheckoutInterface.BOTON_CONTINUAR),
-                Click.on(CheckoutInterface.BOTON_FINISH)
+        WaitUntil.the(CheckoutInterface.BOTON_CONTINUAR, isVisible()).forNoMoreThan(10).seconds(),
+        Click.on(CheckoutInterface.BOTON_CONTINUAR),
+
+        WaitUntil.the(CheckoutInterface.BOTON_FINISH, isVisible()).forNoMoreThan(10).seconds(),
+        Click.on(CheckoutInterface.BOTON_FINISH)
         );
     }
 }

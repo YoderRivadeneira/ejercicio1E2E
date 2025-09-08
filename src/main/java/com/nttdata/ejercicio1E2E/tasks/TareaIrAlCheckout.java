@@ -17,6 +17,7 @@ public class TareaIrAlCheckout implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(CarritoInterface.BOTON_CARRITO),
+                
                 Click.on(CarritoInterface.BOTON_CHECKOUT)
         );
     }
