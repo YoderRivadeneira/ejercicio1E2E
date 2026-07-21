@@ -53,7 +53,7 @@ Esto descargará todas las dependencias declaradas en el archivo build.gradle, t
 Ejecutar las pruebas: Ejecuta las pruebas y genera los reportes con el siguiente comando:
 
 ```bash
-   ./gradlew test --tests "com.nttdata.ejercicio1E2E.runner.EjecutarSerenity" --info
+   ./gradlew test --tests "com.devsu.ejercicio1E2E.runner.EjecutarSerenity" --info
 ```
 Nota: Asegurate de ejecutar este comando en la ruta del proyecto, es decir en la terminal debes ubicarte en la ruta del proyecto.
 
@@ -77,7 +77,7 @@ o
 ubicar el icono verde de Run y ejecutar "EjecutarSerenity", si el icono verde no esta configurado se puede configurar en las opciones de "Run" opción "edit configuration" y asignandole el siguiente comando: 
 
 ```bash
-:test --tests "com.nttdata.ejercicio1E2E.runner.EjecutarSerenity"
+:test --tests "com.devsu.ejercicio1E2E.runner.EjecutarSerenity"
 ```
 
 ![image](https://github.com/user-attachments/assets/583e6e96-5723-44d5-ac32-616d55da38d9)
@@ -87,7 +87,7 @@ ubicar el icono verde de Run y ejecutar "EjecutarSerenity", si el icono verde no
 
 📋 Reporte en Cucumber: 
 
-Los reportes en Cucumber se generan automáticamente y reflejan los escenarios definidos en el archivo src/test/java/com/nttdata/ejercicio1E2E/features/compra.feature.
+Los reportes en Cucumber se generan automáticamente y reflejan los escenarios definidos en el archivo src/test/java/com/devsu/ejercicio1E2E/features/compra.feature.
 
 la ruta donde se ubica el reporte después de ejecutar un test es: ejercicio1-E2E/build/reports/tests/test/index.html
 
@@ -120,7 +120,7 @@ src/
 
 │   └── java/
 
-│       └── com/nttdata/ejercicio1E2E/
+│       └── com/devsu/ejercicio1E2E/
 
 │           ├── tasks/                      # Implementaciones de tareas en ScreenPlay
 
@@ -143,7 +143,7 @@ src/
 
     └── java/
     
-        └── com/nttdata/ejercicio1E2E/
+        └── com/devsu/ejercicio1E2E/
         
             ├── runner/                     # Para la ejecución (Runner)
             

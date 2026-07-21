@@ -43,4 +43,4 @@ jobs:
 
       # 6. Ejecutar las pruebas en modo headless
       - name: Run tests in headless mode
-        run: ./gradlew test --tests "com.nttdata.ejercicio1E2E.runner.EjecutarSerenity" --info
+        run: ./gradlew test --tests "com.devsu.ejercicio1E2E.runner.EjecutarSerenity" --info
