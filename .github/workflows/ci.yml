@@ -15,18 +15,18 @@ jobs:
     steps:
       # 1. Configurar el repositorio
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 2. Configurar JDK
       - name: Set up JDK 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: 17
 
       # 3. Cache para dependencias de Gradle
       - name: Cache Gradle dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.gradle/caches
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
@@ -46,3 +46,26 @@ jobs:
         run: ./gradlew test --tests "com.devsu.ejercicio1E2E.runner.EjecutarSerenity" --info
         env:
           CHROME_ARGS: "--headless --no-sandbox --disable-dev-shm-usage --disable-gpu"
+
+      # 7. Generar reportes de Serenity
+      - name: Generate Serenity Reports
+        run: ./gradlew aggregate
+        if: always()
+
+      # 8. Subir artefactos (reportes de Serenity)
+      - name: Upload Serenity Reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: serenity-reports
+          path: target/site/serenity/
+          retention-days: 30
+
+      # 9. Subir artefactos (reportes de pruebas)
+      - name: Upload Test Reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-reports
+          path: build/reports/tests/test/
+          retention-days: 30
