@@ -3,7 +3,7 @@
 
 Este proyecto realiza una prueba funcional automatizada (Prueba E2E) para un flujo E2E de compra en la página [SauceDemo](https://www.saucedemo.com/) utilizando **SerenityBDD** con **ScreenPlay**.
 
-#### 🚀 EXTRAS/PLUS: Integración continua(DevOps) CI/CD con GithubActions
+####  EXTRAS/PLUS: Integración continua(DevOps) CI/CD con GithubActions
 
 
 ## 📋 Prerequisitos
