@@ -45,7 +45,8 @@ Nota: Asegurate de ejecutar este comando en la ruta del proyecto, es decir en la
 ```
 Esto descargará todas las dependencias declaradas en el archivo build.gradle, también se puede hhacer desde el IDE con las opciones de gradle
 
-![image](https://github.com/user-attachments/assets/991041d2-2238-41cd-b30f-bad01ac76eb3)
+<img width="1437" height="780" alt="image" src="https://github.com/user-attachments/assets/f1c2777a-b3b8-49cf-8b64-9e36af1dfb73" />
+
 
 
 🚀 Instrucciones para ejecutar las pruebas
@@ -66,13 +67,8 @@ Para ello puedes ubicar la clase "EjecutarSerenity" darleclick derecho y selecci
 
 
 
-![image](https://github.com/user-attachments/assets/34e3644c-5d4e-42aa-a58b-8b567c80b25a)
+<img width="1434" height="935" alt="image" src="https://github.com/user-attachments/assets/95d80a07-4ba7-468f-b3e8-44cef646852f" />
 
-
-
-
-
-o 
 
 ubicar el icono verde de Run y ejecutar "EjecutarSerenity", si el icono verde no esta configurado se puede configurar en las opciones de "Run" opción "edit configuration" y asignandole el siguiente comando: 
 
@@ -80,8 +76,7 @@ ubicar el icono verde de Run y ejecutar "EjecutarSerenity", si el icono verde no
 :test --tests "com.devsu.ejercicio1E2E.runner.EjecutarSerenity"
 ```
 
-![image](https://github.com/user-attachments/assets/583e6e96-5723-44d5-ac32-616d55da38d9)
-
+<img width="1489" height="958" alt="image" src="https://github.com/user-attachments/assets/8eca7656-0e10-45ea-b049-088bd6bdc95b" />
 
 
 
@@ -95,9 +90,25 @@ la ruta donde se ubica el reporte después de ejecutar un test es: ejercicio1-E2
 
 
 
-![image](https://github.com/user-attachments/assets/3a409c3a-592e-4fb8-8bbd-eea6ccb86350)
 
-![image](https://github.com/user-attachments/assets/712949fd-835d-4cad-93df-42efdf00951e)
+<img width="1182" height="512" alt="image" src="https://github.com/user-attachments/assets/f9cad4b8-cfad-47b6-a1fe-63ba2594f01e" />
+<img width="1182" height="512" alt="image" src="https://github.com/user-attachments/assets/55963722-8f65-48ce-be0b-7056953b60ba" />
+<img width="674" height="531" alt="image" src="https://github.com/user-attachments/assets/10126a2d-31f9-4cbb-98d2-fe934ed2b289" />
+<img width="1351" height="621" alt="image" src="https://github.com/user-attachments/assets/94c29c2d-7d97-4648-a0a0-77bbdca3789f" />
+<img width="1351" height="623" alt="image" src="https://github.com/user-attachments/assets/a70b7e3b-8266-46ec-8345-4068ab5785ca" />
+<img width="1208" height="641" alt="image" src="https://github.com/user-attachments/assets/6195470b-6077-46cf-a76f-4305dfc302bb" />
+<img width="1208" height="641" alt="image" src="https://github.com/user-attachments/assets/c2c00772-1300-4675-820f-b5b3c5520a38" />
+<img width="2202" height="894" alt="image" src="https://github.com/user-attachments/assets/7cb0c576-fd79-43eb-a5b3-57c64c85224e" />
+## Ejecución en CI/CD
+<img width="2564" height="1440" alt="image" src="https://github.com/user-attachments/assets/557f75df-7d3e-48c4-b583-57f8b8e9d3ab" />
+<img width="1573" height="709" alt="image" src="https://github.com/user-attachments/assets/29f087aa-22b3-4aa0-a99f-3e1bd0227e91" />
+<img width="1566" height="470" alt="image" src="https://github.com/user-attachments/assets/fa8e39d6-4cb7-40a0-b895-14ffbe01e2d4" />
+<img width="1569" height="446" alt="image" src="https://github.com/user-attachments/assets/d7fb7d1e-e67a-4260-9205-44c54a60da75" />
+<img width="2098" height="102" alt="image" src="https://github.com/user-attachments/assets/2de9ee38-897b-4cbb-9f36-a83f52c1c6ee" />
+
+<img width="2558" height="1538" alt="image" src="https://github.com/user-attachments/assets/05c6c0a7-26f1-4b43-805a-5312c1e51a8d" />
+
+
 
 
         Reporte en cucumber: build/reports/tests/test/index.html
@@ -185,7 +196,7 @@ Si encuentras problemas de configuración, revisa las variables de entorno y las
 
 
 
-🚀 EXTRAS/PLUS
+# 🚀 EXTRAS/PLUS: Integración continua(DevOps) CI/CD con GithubActions
 
 DevOps e Integración continua CICD: https://github.com/YoderRivadeneira/ejercicio1E2E/actions
 
@@ -195,12 +206,11 @@ Al realizar un push a la rama automáticamente se ejecuta el test con los runner
 
 
 ![image](https://github.com/user-attachments/assets/d40b5e95-fa0e-4090-85da-1ededd44a732)
+<img width="1340" height="556" alt="image" src="https://github.com/user-attachments/assets/bc00f583-c7c8-41ba-8c52-307f9b51ce86" />
+<img width="1344" height="610" alt="image" src="https://github.com/user-attachments/assets/c8d22552-3908-4010-8b6c-1c80f3e7a945" />
+
+<img width="1349" height="609" alt="image" src="https://github.com/user-attachments/assets/36269dc8-e241-4907-8ffa-5094ecf5c599" />
 
 
-![image](https://github.com/user-attachments/assets/0c73b0b6-1410-4790-8491-8553734d7501)
 
-![image](https://github.com/user-attachments/assets/e54a0ef2-561e-4b42-8e03-f0ae79218cc3)
-
-
-![image](https://github.com/user-attachments/assets/5dc61b52-d739-4981-a0e4-8c99dde1f44f)
 
