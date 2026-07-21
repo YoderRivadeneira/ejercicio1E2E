@@ -5,7 +5,6 @@ Este proyecto realiza una prueba funcional automatizada (Prueba E2E) para un flu
 
 ####  EXTRAS/PLUS: Integración continua(DevOps) CI/CD con GithubActions
 
-
 ## 📋 Prerequisitos
 
 Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisitos:
