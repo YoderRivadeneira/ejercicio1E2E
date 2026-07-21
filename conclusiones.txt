@@ -1,21 +1,9 @@
 # Flujo de Compra en SauceDemo
 
-## Resumen de Resultados
-
-| **Clase**             | **Descripción**                  | **Pruebas** | **Fallos** | **Ignorados** | **Duración (s)** | **Éxito (%)** |
-|------------------------|----------------------------------|-------------|------------|---------------|------------------|---------------|
-| Flujo de compra en SauceDemo | Completar una compra satisfactoriamente | 1           | 0          | 0             | 43.869         | 100%          |
-
-### Detalles del Test Ejecutado
-| **Escenario**                          | **Duración** | **Resultado** |
-|----------------------------------------|--------------|---------------|
-| Completar una compra satisfactoriamente | 43.869s      | ✅ Exitosa     |
-
----
 
 ## Conclusiones del Ejercicio
 
-### Hallazgos
+### Hallazgos: Flujo E2E exitoso sin errores en su flujo, no se detectaron errores que impidan realizar el flujo E2E
 
 1. **Automatización Exitosa del Flujo de Compra:**
    - El flujo completo de compra en SauceDemo fue automatizado con éxito, cubriendo:
