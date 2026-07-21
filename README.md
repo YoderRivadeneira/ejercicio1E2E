@@ -1,9 +1,9 @@
-Nota: Para visualizar de manera correcta todas las imágenes de este instructivo se recomienda estar logeado en github, ya que si se visualiza el readme sin estar logeado en git, puede ser que las imágenes no se visualicen correctamente.
 
 # Ejercicio E2E - Flujo de Compra en SauceDemo
 
-Este proyecto realiza una prueba funcional automatizada (Prueba E2E) para un flujo de compra en la página [SauceDemo](https://www.saucedemo.com/) utilizando **SerenityBDD** con **ScreenPlay**.
+Este proyecto realiza una prueba funcional automatizada (Prueba E2E) para un flujo E2E de compra en la página [SauceDemo](https://www.saucedemo.com/) utilizando **SerenityBDD** con **ScreenPlay**.
 
+#### 🚀 EXTRAS/PLUS: Integración continua(DevOps) CI/CD con GithubActions
 
 
 ## 📋 Prerequisitos
@@ -196,7 +196,7 @@ Si encuentras problemas de configuración, revisa las variables de entorno y las
 
 
 
-# 🚀 EXTRAS/PLUS: Integración continua(DevOps) CI/CD con GithubActions
+#  EXTRAS/PLUS: Integración continua(DevOps) CI/CD con GithubActions
 
 DevOps e Integración continua CICD: https://github.com/YoderRivadeneira/ejercicio1E2E/actions
 
