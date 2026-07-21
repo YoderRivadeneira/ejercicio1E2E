@@ -19,16 +19,11 @@ public class TestContext {
         if (driver == null) {
             WebDriverManager.chromedriver().setup();
 
-            boolean isCI = System.getenv("CI") != null;
-
             ChromeOptions options = new ChromeOptions();
             
-            // Crear un perfil temporal sin datos del navegador
             tempProfileDir = Files.createTempDirectory("chrome-profile");
             options.addArguments("user-data-dir=" + tempProfileDir.toAbsolutePath());
             
-            // SOLUCIÓN PROBADA PARA CHROME 124+: Desactivar popup de cambiar contraseña
-            // Basado en: https://github.com/ultrafunkamsterdam/undetected-chromedriver/issues/640
             options.addArguments("--password-store=basic");
             options.addArguments("--disable-blink-features=AutomationControlled");
             options.addArguments("--disable-password-generation");
@@ -44,8 +39,11 @@ public class TestContext {
             options.addArguments("--disable-component-update");
             options.addArguments("--disable-sync");
             options.addArguments("--disable-infobars");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--headless");
+            options.addArguments("--disable-gpu");
             
-            // Prefs para desactivar password manager y leak detection
             Map<String, Object> prefs = new HashMap<>();
             prefs.put("credentials_enable_service", false);
             prefs.put("profile.password_manager_enabled", false);
@@ -55,16 +53,9 @@ public class TestContext {
             prefs.put("profile.default_content_setting_values.notifications", 2);
             prefs.put("profile.default_content_setting_values.automatic_downloads", 1);
             prefs.put("profile.managed_default_content_settings.notifications", 2);
-            prefs.put("safebrowsing.enabled", true); // Mantener true para seguridad
+            prefs.put("safebrowsing.enabled", true);
             
             options.setExperimentalOption("prefs", prefs);
-            
-            if (isCI) {
-                options.addArguments("--headless");
-                options.addArguments("--disable-gpu");
-                options.addArguments("--no-sandbox");
-                options.addArguments("--disable-dev-shm-usage");
-            }
 
             driver = new ChromeDriver(options);
 

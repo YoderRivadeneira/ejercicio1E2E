@@ -44,3 +44,5 @@ jobs:
       # 6. Ejecutar las pruebas en modo headless
       - name: Run tests in headless mode
         run: ./gradlew test --tests "com.devsu.ejercicio1E2E.runner.EjecutarSerenity" --info
+        env:
+          CHROME_ARGS: "--headless --no-sandbox --disable-dev-shm-usage --disable-gpu"
