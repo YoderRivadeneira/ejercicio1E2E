@@ -190,11 +190,4 @@ NOTAS ADICIONALES
 
 • Para más detalles sobre la estructura y configuración, consulta README.md
 
-================================================================================
-CONTACTO Y REFERENCIAS
-================================================================================
 
-Repositorio: https://github.com/YoderRivadeneira/ejercicio1E2E
-Web de Prueba: https://www.saucedemo.com/
-
-================================================================================
