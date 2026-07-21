@@ -11,3 +11,4 @@ public class LoginInterface {
     public static final Target LOGIN_BUTTON = Target.the("botón de login")
             .locatedBy("#login-button");
 }
+

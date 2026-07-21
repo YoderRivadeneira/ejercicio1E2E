@@ -15,3 +15,4 @@ Feature: Flujo de compra en SauceDemo
     | standard_user     | secret_sauce  | Andres   | Perez     | 11223        | THANK YOU FOR YOUR ORDER    |
     | standard_user     | secret_sauce  | Jorge   | Ruiz     | 11223        | THANK YOU FOR YOUR ORDER    |
     | standard_user     | secret_sauce  | Daniel   | Calero     | 11223        | THANK YOU FOR YOUR ORDER    |
+

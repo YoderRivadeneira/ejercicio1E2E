@@ -17,3 +17,4 @@ public class CheckoutInterface {
     public static final Target MENSAJE_CONFIRMACION = Target.the("Mensaje de confirmación de la compra")
             .locatedBy(".complete-header");
 }
+

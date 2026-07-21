@@ -26,3 +26,4 @@ public class ActorUsuario {
         return OnStage.theActorCalled(NOMBRE_ACTOR);
     }
 }
+
