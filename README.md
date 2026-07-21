@@ -11,10 +11,10 @@ Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisit
 
 - **Sistema Operativo**: Windows 10 / macOS / Linux
 - **IDE Recomendado**: IntelliJ IDEA 2023.1 o superior
-- **JDK**: Versión 17 (configurado en la variable de entorno `JAVA_HOME`)
+- **JDK**: Versión 17 o superior (configurado en la variable de entorno `JAVA_HOME`)
 - **Google Chrome**: cualquiera (de preferencia la última versión)
 - **Gradle Wrapper**: No necesitas instalarlo globalmente; el proyecto incluye el wrapper.
-- **Conexión a Internet**: Necesaria para descargar dependencias y ejecutar las pruebas.
+
 
 ## 💻 Comandos de instalación
 
